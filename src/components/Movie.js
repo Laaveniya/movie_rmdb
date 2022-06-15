@@ -21,7 +21,7 @@ const Movie = () => {
     const { movieId } = useParams();
     const { state: movie, loading, error } = useMovieFetch(movieId);
     if(loading) return <Spinner />
-    if(error) return <div>Something when wrong ...</div>
+    if(error) return <div>Something when wrong ..</div>
     return (
         <>
             <BreadCrumb movieTitle={movie.original_title} />
